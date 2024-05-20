@@ -1,0 +1,11 @@
+a.header-nav-title {
+	margin: 1rem;
+}
+
+a.header-nav-title > * {
+	margin: 0;
+}
+
+.header-title {
+	text-transform: uppercase;
+}

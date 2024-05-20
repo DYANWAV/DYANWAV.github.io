@@ -1,0 +1,69 @@
+:root {
+	/* COLORES */
+	--white: rgb(255, 255, 255);
+	--black: rgb(5, 23, 35);
+	--red: rgb(242, 29, 29);
+	--green: rgb(0, 173, 28);
+	--blue: rgb(35, 96, 255);
+	--gray: rgb(186, 186, 186);
+	--purple: rgb(150, 0, 158)
+	--transparent: transparent;
+
+	/* COLORES HOVER */
+	--white-hover: rgb(207, 207, 207);
+	--black-hover: rgb(15, 70, 107);
+	--red-hover: rgb(217, 13, 13);
+	--green-hover: rgb(0, 153, 26);
+	--blue-hover: rgb(0, 68, 240);
+	--gray-hover: rgb(161, 161, 161);
+	--purple-hover: rgb(121, 0, 128);
+
+	/* SIZING */
+	--pixel-1: 1px;
+	--pixel-2: 4px;
+	--pixel-3: 6px;
+	--pixel-4: 8px;
+	--pixel-5: 10px;
+	--pixel-6: 12px;
+	--pixel-7: 14px;
+	--pixel-8: 16px;
+	--pixel-9: 18px;
+	--pixel-10: 20px;
+	--pixel-11: 22px;
+	--pixel-12: 24px;
+
+	/* FONT SIZE */
+	--display-1: 80px;
+	--display-2: 60px;
+	--display-3: 50px;
+	--display-4: 40px;
+	--display-5: 30px;
+	--display-6: 20px;
+
+	--h1: 40px;
+	--h2: 30px;
+	--h3: 25px;
+	--h4: 20px;
+
+	/* BORDERS */
+	--border-white: 1px solid var(--white);
+	--border-black: 1px solid var(--black);
+	--border-red: 1px solid var(--red);
+	--border-green: 1px solid var(--green);
+	--border-blue: 1px solid var(--blue);
+	--border-gray: 1px solid var(--gray);
+	--border-purple: 1px solid var(--purple);
+	--border-transparent: 1px solid var(--transparent);
+
+	/* BORDERS HOVER */
+	--border-white-hover: 1px solid var(--white-hover);
+	--border-black-hover: 1px solid var(--black-hover);
+	--border-red-hover: 1px solid var(--red-hover);
+	--border-green-hover: 1px solid var(--green-hover);
+	--border-blue-hover: 1px solid var(--blue-hover);
+	--border-gray-hover: 1px solid var(--gray-hover);
+	--border-purple-hover: 1px solid var(--purple-hover);
+
+	/* -- HEADER & FOOTER-- */
+	--header-height: 7vh;
+}

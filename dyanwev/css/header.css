@@ -1,0 +1,99 @@
+@import url(variables.css);
+
+header {
+	background-color: var(--white);
+	width: 100vw;
+	min-height: var(--header-height);
+	position: fixed;
+	top: 0;
+	color: var(--black);
+	z-index: 1;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+header .header-nav {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	min-width: 850px;
+	position: relative;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav > * {
+	margin: 1rem;
+}
+
+header nav > * > * {
+	margin: 0;
+}
+
+header a {
+	margin-inline: 1rem;
+	color: var(--black);
+	/* border-bottom: 1px solid transparent; */
+	/* transition: all 0.2s; */
+}
+
+header a:hover {
+	color: var(--black-hover);
+	/* border-bottom: 1px solid var(--black); */
+}
+
+header a::after {
+	content: '';
+	color: inherit;
+	width: 0%;
+	border: 0px solid var(--black-hover);
+	height: 0;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	margin-top: var(--pixel-5);
+	transition: all 0.2s;
+}
+
+header a:hover::after {
+	width: 100%;
+	border: var(--border-black-hover);
+}
+
+/* MEDIA QUERY */
+/* MEDIA QUERY */
+@media screen and (max-width: 880px) {
+	header .header-nav {
+		display: flex;
+		flex-basis: unset;
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+	header h1 {
+		font-size: 1.4em;
+	}
+
+	header nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	header h1 {
+		font-size: 1.2em;
+	}
+
+	.header-nav a svg {
+		width: var(--pixel-12);
+	}
+}
