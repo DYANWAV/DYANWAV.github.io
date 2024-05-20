@@ -1,0 +1,15 @@
+@import url(css/pokemons-container.css);
+@import url(css/card/pokemon-card/pokemon-card.css);
+@import url(css/card/pokemon-card/pokemon-id-back.css);
+@import url(css/card/pokemon-card/pokemon-image.css);
+@import url(css/card/pokemon-card/pokemon-info/nombre-container/nombre-container.css);
+@import url(css/card/pokemon-card/pokemon-info/nombre-container/pokemon-id.css);
+@import url(css/card/pokemon-card/pokemon-info/nombre-container/pokemon-nombre.css);
+@import url(css/card/pokemon-card/pokemon-info/pokemon-info.css);
+@import url(css/card/pokemon-card/pokemon-info/pokemon-stats.css);
+@import url(css/card/pokemon-card/pokemon-info/pokemon-tipos.css);
+@import url(css/header/header.css);
+@import url(css/header/nav.css);
+@import url(css/header/header-buttons.css);
+@import url(css/variables/variables.css);
+@import url(css/main.css);

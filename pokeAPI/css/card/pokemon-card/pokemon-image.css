@@ -1,0 +1,10 @@
+.pokemon-imagen {
+	padding-inline: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.pokemon-imagen img {
+	width: 100%;
+	max-width: 230px;
+}

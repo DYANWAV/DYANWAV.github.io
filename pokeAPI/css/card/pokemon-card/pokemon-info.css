@@ -1,0 +1,32 @@
+.pokemon-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding-inline: 1rem;
+	align-items: center;
+	text-align: center;
+}
+
+.nombre-contenedor {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.pokemon-id {
+	background-color: var(--clr-gray);
+	padding: 0.25rem;
+	border-radius: 100vmax;
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+.pokemon-nombre {
+	font-size: 1.4rem;
+}
+
+.pokemon-info > * > *{
+	flex-basis: 80px;
+	flex-grow: 1;
+}

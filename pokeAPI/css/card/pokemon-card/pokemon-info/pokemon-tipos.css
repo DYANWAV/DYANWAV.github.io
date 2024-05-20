@@ -1,0 +1,14 @@
+.pokemon-tipos {
+	display: flex;
+	gap: 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tipo {
+	padding: 0.5rem 1rem;
+	min-width: 80px;
+	border-radius: 100vmax;
+}

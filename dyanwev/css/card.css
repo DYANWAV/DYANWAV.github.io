@@ -1,0 +1,52 @@
+.card {
+	background-color: var(--white);
+	border: var(--border-white);
+	border-radius: 8px;
+	color: var(--black);
+	padding: 1rem;
+	width: 80%;
+	max-width: 500px;
+	min-width: 320px;
+	margin: 2rem auto;
+}
+
+.card-black {
+	background-color: var(--black);
+	border: var(--transparent);
+	color: var(--white);
+}
+
+.card-gray {
+	background-color: var(--gray);
+	border: var(--border-gray);
+	color: var(--white);
+}
+
+.card-blue {
+	background-color: var(--blue);
+	border: var(--border-blue);
+	color: var(--white);
+}
+
+.card-red {
+	background-color: var(--red);
+	border: var(--border-red);
+	color: var(--white);
+}
+
+.card-green {
+	background-color: var(--green);
+	border: var(--border-green);
+	color: var(--white);
+}
+
+.card-purple {
+	background-color: var(--purple);
+	border: var(--border-purple);
+	color: var(--white);
+}
+
+.card-transparent {
+	background-color: var(--transparent);
+	color: var(--white);
+}

@@ -1,0 +1,12 @@
+#todos {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pokemon-todos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}

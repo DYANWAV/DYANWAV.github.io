@@ -1,0 +1,36 @@
+.btn-header {
+	background-color: var(--clr-gray);
+	padding: 0.5rem;
+	border-radius: 100vmax;
+	width: 100%;
+	cursor: pointer;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.btn-header:hover {
+	box-shadow: 5px 5px 1px black;
+	transform: scale(1.1);
+}
+
+.btn-header:active {
+	box-shadow: 2px 2px 1px black;
+	transform: scale(1.1);
+	transition: all 0.1s;
+}
+
+.btn-header:focus {
+	box-shadow: 5px 5px 1px black;
+	transform: scale(1.1);
+	transition: all 0.1s;
+}
+
+.ver-todos {
+	min-width: 100%;
+}
+
+.ver-todos .btn-header {
+	background-color: #fff;
+	padding: 1rem;
+}

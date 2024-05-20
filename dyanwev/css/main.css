@@ -1,0 +1,65 @@
+@import url(normalize.css);
+@import url(variables.css);
+@import url(images.css);
+@import url(button.css);
+@import url(header.css);
+@import url(header-nav-title.css);
+@import url(anchor.css);
+@import url(footer.css);
+@import url(card.css);
+@import url(icons.css);
+@import url(burger-menu-icon.css);
+@import url(article/article.css);
+@import url(nav-hidden.css);
+
+* {
+	box-sizing: border-box;
+	font-family: Verdana, sans-serif;
+}
+
+html {
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--black);
+	color: white;
+	font-size: 16px;
+	height: 100%;
+	line-height: 1.5;
+	margin-top: calc(var(--header-height) + 1.5rem);
+}
+
+.flex-container {
+	display: flex;
+}
+
+.card-yellow {
+	background: gold; /* --- PRUEBA --- */
+}
+
+#Inicio {
+	scroll-margin-top: 100px;
+}
+
+.btn-volver-inicio {
+	margin: 40px auto;
+}
+
+.btn-volver-inicio > * {
+	margin: 0 auto;
+	display: block;
+}
+
+@media (max-width: 880px) {
+	body {
+		margin-top: 65.59px;
+	}
+}
+
+@media (max-width: 450px) {
+	body {
+		margin-top: 61.99px;
+	}
+}

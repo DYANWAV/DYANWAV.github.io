@@ -1,0 +1,86 @@
+svg {
+	width: 30px;
+	fill: var(--black);
+}
+
+/* svg:hover {
+	transform: scale(110%);
+	fill: var(--black-hover);
+} */
+
+/* ICONS INSIDE ANCHOR */
+a > svg {
+	/* fill: var(--black); */
+	width: 30px;
+	height: 30px;
+	transition: all 0.2s;
+	margin: 0.5rem;
+}
+
+a:hover > svg {
+	fill: var(--black-hover);
+}
+/* ======================== */
+
+/* ICONS INSIDE BUTTON */
+button svg {
+	width: 20px;
+	transform: scale(100%);
+}
+
+button:hover > svg {
+	transform: scale(100%);
+}
+/* ======================== */
+
+.icon-blue {
+	fill: var(--blue);
+}
+
+.icon-blue:hover {
+	fill: var(--blue-hover);
+}
+
+/* ===================== */
+.icon-red {
+	fill: var(--red);
+}
+
+.icon-red:hover {
+	fill: var(--red-hover);
+}
+
+/* ===================== */
+.icon-green {
+	fill: var(--green);
+}
+
+.icon-green:hover {
+	fill: var(--green-hover);
+}
+
+/* ===================== */
+.icon-purple {
+	fill: var(--purple);
+}
+
+.icon-purple:hover {
+	fill: var(--purple-hover);
+}
+/* ===================== */
+.icon-gray {
+	fill: var(--gray);
+}
+
+.icon-gray:hover {
+	fill: var(--gray-hover);
+}
+
+/* ===================== */
+.icon-white {
+	fill: var(--white);
+}
+
+.icon-white:hover {
+	fill: var(--white-hover);
+}

@@ -1,0 +1,197 @@
+@import url(variables.css);
+
+/* BOTÓN POR DEFECTO */
+button {
+	background-color: var(--white);
+	border: none;
+	border: var(--border-transparent);
+	/* border-radius: 8px; */
+	color: var(--black);
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+
+	font-size: 1em;
+	margin-block: 1rem;
+	padding: 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+button:hover {
+	background-color: var(--white-hover);
+}
+
+.btn-rounded {
+	border-radius: 50px;
+}
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+/* BUTTON BLUE */
+.btn-blue {
+	background-color: var(--blue);
+	border: var(--border-transparent);
+	color: var(--white);
+}
+
+.btn-blue:hover {
+	background-color: var(--blue-hover);
+}
+
+/* BUTTON RED */
+.btn-red {
+	background-color: var(--red);
+	border: var(--border-transparent);
+	color: var(--white);
+}
+
+.btn-red:hover {
+	background-color: var(--red-hover);
+}
+
+/* BUTTON GREEN */
+.btn-green {
+	background-color: var(--green);
+	border: var(--border-transparent);
+	color: var(--white);
+}
+
+.btn-green:hover {
+	background-color: var(--green-hover);
+}
+
+/* BUTTON PURPLE */
+.btn-purple {
+	background-color: var(--purple);
+	border: var(--border-transparent);
+	color: var(--white);
+}
+
+.btn-purple:hover {
+	background-color: var(--purple-hover);
+}
+
+/* BUTTON BLACK */
+.btn-black {
+	background-color: var(--black);
+	border: var(--border-transparent);
+	color: var(--white);
+}
+
+.btn-black:hover {
+	background-color: var(--black-hover);
+}
+
+/* BUTTON GRAY */
+.btn-gray {
+	background-color: var(--gray);
+	border: var(--border-transparent);
+	color: var(--white);
+}
+
+.btn-gray:hover {
+	background-color: var(--gray-hover);
+}
+/* --------------  --------------- */
+
+/* -------------- BTN OULINE --------------- */
+/* -------------- BTN OULINE --------------- */
+/* -------------- BTN OULINE --------------- */
+
+/* BUTTON OUTLINE WHIT */
+.btn-outline-white {
+	background-color: var(--transparent);
+	border: var(--border-white);
+	color: var(--white);
+}
+
+.btn-outline-white:hover {
+	background-color: var(--white);
+	border: var(--border-white);
+	color: var(--black);
+}
+
+/* BUTTON OUTLINE BLUE */
+.btn-outline-blue {
+	background-color: var(--transparent);
+	border: var(--border-blue);
+	color: var(--blue);
+}
+
+.btn-outline-blue:hover {
+	background-color: var(--blue);
+	border: var(--border-blue);
+	color: var(--white);
+}
+
+/* BUTTON OUTLINE RED */
+.btn-outline-red {
+	background-color: var(--transparent);
+	border: var(--border-red);
+	color: var(--red);
+}
+
+.btn-outline-red:hover {
+	background-color: var(--red);
+	border: var(--border-red);
+	color: var(--white);
+}
+
+/* BUTTON OUTLINE GREEN */
+.btn-outline-green {
+	background-color: var(--transparent);
+	border: var(--border-green);
+	color: var(--green);
+}
+
+.btn-outline-green:hover {
+	background-color: var(--green);
+	border: var(--border-green);
+	color: var(--white);
+}
+
+/* BUTTON OUTLINE PURPLE */
+.btn-outline-purple {
+	background-color: var(--transparent);
+	border: var(--border-purple);
+	color: var(--purple);
+}
+
+.btn-outline-purple:hover {
+	background-color: var(--purple);
+	border: var(--border-purple);
+	color: var(--white);
+}
+
+/* BUTTON OUTLINE BLACK */
+.btn-outline-black {
+	background-color: var(--transparent);
+	border: var(--border-black);
+	color: var(--black);
+}
+
+.btn-outline-black:hover {
+	background-color: var(--black);
+	border: var(--border-black);
+	color: var(--white);
+}
+
+/* BUTTON OUTLINE GRAY */
+.btn-outline-gray {
+	background-color: var(--transparent);
+	border: var(--border-gray);
+	color: var(--gray);
+}
+
+.btn-outline-gray:hover {
+	background-color: var(--gray);
+	border: var(--border-gray);
+	color: var(--white);
+}

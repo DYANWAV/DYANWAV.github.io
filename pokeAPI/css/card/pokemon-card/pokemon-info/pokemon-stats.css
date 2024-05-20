@@ -1,0 +1,13 @@
+.pokemon-stats {
+	display: flex;
+	gap: 1rem;
+	font-size: 1rem;
+
+}
+
+.stat {
+	background-color: var(--clr-gray);
+	padding: 0.5rem;
+	min-width: 80px;
+	border-radius: 100vmax;
+}
