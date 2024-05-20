@@ -1,0 +1,34 @@
+@import url(label.css);
+@import url(input.css);
+@import url(button.css);
+@import url(anchor.css);
+
+form {
+	padding: 3rem;
+	border-radius: 30px;
+	font-family: Verdana;
+	width: 600px;
+	max-width: 800px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+	outline: 2px solid #fff3;
+	backdrop-filter: blur(7px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+@media (max-width: 375px) {
+	form {
+		padding: 40px;
+		font-size: 14px;
+		width: 350px;
+	}
+}

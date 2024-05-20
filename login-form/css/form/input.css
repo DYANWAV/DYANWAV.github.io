@@ -1,0 +1,22 @@
+form label input {
+	border: 1px solid transparent;
+	border-bottom: 1px solid #aaa;
+	border-radius: 8px 8px 0 0;
+	padding: 1rem;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	width: 100%;
+	font-family: inherit;
+	transition: all 0.2s;
+}
+
+form label input:focus {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #fff;
+	/* color: white; */
+}
+
+::placeholder {
+	color: #aaa;
+}
