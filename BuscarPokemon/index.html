@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<title>BuscarPokemon</title>
+	</head>
+	<body>
+		<main class="main">
+			<div class="buscar-pokemon-container">
+				<form action="" class="poke-form">
+					<label class="pokemon" for="pokemon">
+						<input
+							class="buscar-pokemon"
+							type="text"
+							name="pokemon"
+							autocomplete="off"
+							value="pikachu" />
+						<input class="button-buscar" type="submit" value="Buscar" />
+					</label>
+				</form>
+
+				<article class="poke-card">
+					<strong class="poke-name">Pokedex</strong>
+					<figure class="poke-figure">
+						<img
+							width="200"
+							style="border-radius: 100vmax"
+							src="https://raw.githubusercontent.com/accesibleprogramacion/pokedex/main/poke-shadow.png"
+							alt="Pokemons Shadow"
+							class="poke-image" />
+					</figure>
+					<div class="poke-id"></div>
+					<div class="poke-types"></div>
+					<div class="poke-stats"></div>
+				</article>
+			</div>
+		</main>
+
+		<script src="js/app.js"></script>
+	</body>
+</html>
