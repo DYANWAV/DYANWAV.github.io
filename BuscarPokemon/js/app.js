@@ -43,7 +43,7 @@ const fetchPoke = async (value) => {
 pokeForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const {value} = e.target.pokemon;
-	if (value === 'camila') {
+	if (value.toLowerCase() === 'camila') {
 		PintarFotoCamila();
 	} else {
 		fetchPoke(value);
@@ -113,7 +113,7 @@ const PintarFotoCamila = () => {
 	const fotoCamila = 'img/camila.jpeg';
 	pokeImg.setAttribute('src', fotoCamila);
 	pokeImg.style.borderRadius = '0';
-	pokeImg.style.clipPath = 'inset(0 0 10px 0)';
+	// pokeImg.style.clipPath = 'inset(0 0 10px 0)';
 	pokeTypes.innerText = 'PAPI TAS LOCO';
 
 	// vida
