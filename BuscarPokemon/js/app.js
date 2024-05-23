@@ -28,6 +28,7 @@ const typeColors = {
 };
 
 const fetchPoke = async (value) => {
+	console.log(value);
 	try {
 		const res = await fetch(
 			`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`
@@ -42,7 +43,11 @@ const fetchPoke = async (value) => {
 pokeForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const {value} = e.target.pokemon;
-	fetchPoke(value);
+	if (value === 'camila') {
+		PintarFotoCamila();
+	} else {
+		fetchPoke(value);
+	}
 });
 
 const renderPokemon = (data) => {
@@ -87,19 +92,58 @@ const renderPokemonStats = (stats) => {
 		statName.append(statAmount);
 		statsContainer.append(statName);
 		pokeStats.append(statName);
-		console.log(stats[stat].stat.name);
-		console.log(stats[stat].base_stat);
-		// console.log(stats[stat].base_stat);
 	}
 };
 
 const renderNotFound = () => {
-	pokeName.textContent = 'Papi Tas Loco';
+	pokeName.textContent = 'Tas Loco';
 	const pokeShadowPng =
 		'https://raw.githubusercontent.com/accesibleprogramacion/pokedex/main/poke-shadow.png';
 	pokeImg.setAttribute('src', pokeShadowPng);
+
 	pokeImg.style.background = 'transparent';
 	pokeTypes.innerText = '';
 	pokeStats.innerText = '';
 	pokeId.innerText = '';
+};
+
+const PintarFotoCamila = () => {
+	pokeStats.textContent = '';
+	pokeName.textContent = 'Camila';
+	const fotoCamila = 'img/camila.jpeg';
+	pokeImg.setAttribute('src', fotoCamila);
+	pokeImg.style.borderRadius = '0';
+	pokeImg.style.clipPath = 'inset(0 0 10px 0)';
+	pokeTypes.innerText = 'PAPI TAS LOCO';
+
+	// vida
+	const vida = document.createElement('span');
+	vida.textContent = 'Vida';
+	// vida valor
+	const vidaValor = document.createElement('strong');
+	vidaValor.textContent = '0. No tengo corazón';
+	// div
+	const div = document.createElement('div');
+	div.append(vida, vidaValor);
+
+	// ataque especial
+	const ataqueEspecial = document.createElement('span');
+	ataqueEspecial.textContent = 'Ataque Especial';
+	// ataque especial valor
+	const ataqueEspecialValor = document.createElement('strong');
+	ataqueEspecialValor.textContent = 'Te ilusiono y me voy';
+	// div2
+	const div2 = document.createElement('div');
+	div2.append(ataqueEspecial, ataqueEspecialValor);
+
+	// distancia
+	const distancia = document.createElement('span');
+	distancia.textContent = 'Distancia';
+	const distanciaValor = document.createElement('strong');
+	distanciaValor.textContent = 'Lejos de tu alcance';
+
+	const div3 = document.createElement('div');
+	div3.append(distancia, distanciaValor);
+
+	pokeStats.append(div, div2, div3);
 };
