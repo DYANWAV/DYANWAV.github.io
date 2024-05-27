@@ -1,0 +1,44 @@
+@import url(css/normalize.css);
+@import url(css/card.css);
+@import url(css/button.css);
+@import url(css/rate-button.css);
+@import url(css/thankyou-card.css);
+@import url(css/star.css);
+@import url(css/rating-form.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--Orange: hsl(25, 97%, 53%);
+	--White: hsl(0, 0%, 100%);
+	--Light-Grey: hsl(217, 12%, 63%);
+	--Dark-Blue: hsl(213, 19%, 18%);
+	--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+body {
+	background-color: var(--Very-Dark-Blue);
+	color: white;
+	min-height: 100vh;
+	font-family: 'Overpass', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+.main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}

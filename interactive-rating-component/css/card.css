@@ -1,0 +1,31 @@
+.card {
+	background-image: linear-gradient(var(--Dark-Blue), var(--Very-Dark-Blue));
+
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+
+	max-width: 380px;
+	margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		width: 345px;
+	}
+}
+
+.card > * {
+	margin: 1rem;
+}
+
+.card .title {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.card .text {
+	letter-spacing: 0.5px;
+	line-height: 1.6rem;
+	color: var(--Light-Grey);
+}

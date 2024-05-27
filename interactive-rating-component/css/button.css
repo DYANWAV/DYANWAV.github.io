@@ -1,0 +1,30 @@
+.card input[type='submit'],
+.card .try-again {
+	background-color: var(--Orange);
+	border: none;
+	border-radius: 100vmax;
+	color: var(--Very-Dark-Blue);
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding: 1rem;
+	transition: all 0.2s ease-in;
+}
+
+@media (hover: hover) {
+	.card input[type='submit']:hover,
+	.card .try-again:hover {
+		background-color: var(--White);
+		color: var(--Very-Dark-Blue);
+	}
+}
+
+.card input[type='submit']:active,
+.card .try-again:active {
+	background-color: var(--White);
+	color: var(--Very-Dark-Blue);
+}
+
+.rating-card input[type='submit'] {
+	width: 100%;
+}

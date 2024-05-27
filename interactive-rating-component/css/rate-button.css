@@ -1,0 +1,33 @@
+.rating-card .buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rating-card .number-value {
+	border: none;
+	border-radius: 100vmax;
+	width: 50px;
+	height: 50px;
+	padding: 1rem;
+	color: var(--Light-Grey);
+	background-color: var(--Dark-Blue);
+	font-weight: 700;
+	transition: all 0.2s ease-in;
+}
+
+@media (hover: hover) {
+	.rating-card .number-value:hover {
+		background-color: var(--White);
+		color: var(--Very-Dark-Blue);
+	}
+}
+
+.rating-card .number-value:active {
+	background-color: var(--White);
+	color: var(--Very-Dark-Blue);
+}
+
+.rating-card .number-value:focus {
+	background-color: var(--Orange);
+	color: var(--White);
+}
