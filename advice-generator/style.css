@@ -1,6 +1,7 @@
 @import url(css/reset.css);
 @import url(css/random-advice-card.css);
 @import url(css/variables.css);
+@import url(css/dice-button.css);
 
 body {
 	min-height: 100vh;

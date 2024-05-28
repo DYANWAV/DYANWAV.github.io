@@ -1,0 +1,26 @@
+#get-random-advice .dice-icon {
+	animation: rotate 3s linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#get-random-advice .animate-dice {
+	animation: dice 600ms linear 0s 1;
+}
+
+@keyframes dice {
+	50% {
+		transform: rotate(180deg) scale(1.6);
+	}
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}
