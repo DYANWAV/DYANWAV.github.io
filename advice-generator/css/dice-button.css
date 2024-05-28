@@ -1,6 +1,8 @@
 #get-random-advice .dice-icon {
 	animation: rotate 3s linear;
 	animation-iteration-count: infinite;
+	-webkit-animation: rotate 3s linear;
+	-webkit-animation-iteration-count: infinite;
 }
 
 @keyframes rotate {
@@ -14,6 +16,7 @@
 
 #get-random-advice .animate-dice {
 	animation: dice 600ms linear 0s 1;
+	-webkit-animation: dice 600ms linear 0s 1;
 }
 
 @keyframes dice {

@@ -2,7 +2,7 @@
 	background-color: var(--Dark-Grayish-Blue);
 	border-radius: 12px;
 	min-height: 340px;
-	width: min(60ch, 95%);
+	width: min(60ch, 90%);
 	text-align: center;
 	padding: 30px 20px;
 	box-shadow: 4px 30px 30px rgba(0, 0, 0, 0.2);
