@@ -1,0 +1,19 @@
+@import url(css/reset.css);
+@import url(css/random-advice-card.css);
+@import url(css/variables.css);
+
+body {
+	min-height: 100vh;
+	background-color: var(--Dark-Blue);
+	font-size: 15px;
+	font-family: 'Manrope', sans-serif;
+	font-optical-sizing: auto;
+	font-display: swap;
+}
+
+.main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
