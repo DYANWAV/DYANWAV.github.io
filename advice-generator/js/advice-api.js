@@ -18,17 +18,21 @@ const adviceSlip = async () => {
 	}
 };
 
-adviceSlip();
-
 const PrintAdvice = (text) => {
 	advice.textContent = `"${text.advice}"`;
 	id.textContent = text.id;
 };
 
-getRandomAdvice.addEventListener('click', adviceSlip);
-getRandomAdvice.addEventListener('click', () => {
+const AnimateDice = () => {
 	diceIcon.classList.add('animate-dice');
 	setTimeout(() => {
 		diceIcon.classList.remove('animate-dice');
 	}, 600);
-});
+};
+
+getRandomAdvice.addEventListener('click', adviceSlip);
+getRandomAdvice.addEventListener('click', AnimateDice);
+
+adviceSlip();
+
+setInterval(adviceSlip, 10000);
