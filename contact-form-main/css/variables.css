@@ -1,0 +1,20 @@
+:root {
+	/* ### Primary */
+
+	--Green-200-lighter: hsl(148, 38%, 91%);
+	--Green-600-medium: hsl(169, 82%, 27%);
+	--Green-box-shadow: hsla(169, 83%, 24%, 0.3);
+	--Green-600-dark: hsl(169, 82%, 19%);
+	--Red: hsl(0, 66%, 54%);
+	--Red-box-shadow: hsla(0, 57%, 47%, 0.4);
+
+	/* ### Neutral */
+
+	--White: hsl(0, 0%, 100%);
+	--Grey-500-medium: hsl(186, 15%, 59%);
+	--Grey-900-darker: hsl(187, 24%, 22%);
+
+	/* sizing */
+	--10-px: 10px;
+	--border-radius: 8px;
+}

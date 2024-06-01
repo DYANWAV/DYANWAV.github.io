@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+			rel="stylesheet" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Frontend Mentor | Contact form</title>
+	</head>
+	<body>
+		<main class="main">
+			<form id="form">
+				<h2>Contact Us</h2>
+
+				<fieldset id="name" class="personal-info">
+					<div class="div">
+						<label for="first-name">
+							First Name *
+							<input id="first-name" type="text" name="first_name" />
+							<span class="error-text">This field is required</span>
+						</label>
+
+						<label for="last-name">
+							Last Name *
+							<input id="last-name" type="text" name="last_name" />
+							<span class="error-text">This field is required</span>
+						</label>
+					</div>
+
+					<label for="Email" class="label-email">
+						Email Adress *
+						<input id="email" type="email" name="email" />
+						<span class="error-text">Please enter a valid email adress</span>
+					</label>
+				</fieldset>
+
+				<!-- Query Type -->
+				<fieldset id="query-type" class="query-type-section">
+					Query Type *
+					<div class="div">
+						<label for="general-enquiry">
+							<input
+								id="general-enquiry"
+								value="general enquiry"
+								type="radio"
+								name="query_type" />
+							General Enquiry
+						</label>
+
+						<label for="support-request">
+							<input
+								value="support request"
+								id="support-request"
+								type="radio"
+								name="query_type" />
+							Support Request
+
+							<span class="error-text"> Please select a query type</span>
+						</label>
+					</div>
+				</fieldset>
+
+				<!-- Message -->
+				<label for="message" class="label-message">
+					Message *
+
+					<textarea name="message" id="message" class="message"></textarea>
+					<span class="error-text">This field is required</span>
+				</label>
+
+				<label for="consent" class="label-consent flex-row">
+					<input id="consent" type="checkbox" value="true" />
+					I consent to being contacted by the team
+
+					<span class="error-text">
+						To submit this form, please consent to being contacted
+					</span>
+				</label>
+
+				<button type="submit" class="btn-submit">Submit</button>
+			</form>
+		</main>
+
+		<script type="module" src="app.js"></script>
+	</body>
+</html>

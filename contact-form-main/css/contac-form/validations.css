@@ -1,0 +1,17 @@
+#form .error-text {
+	display: none;
+	color: var(--Red);
+}
+
+#form :is(#first-name, #last-name, #email, #message).fino {
+	border: 1px solid var(--Green-600-medium);
+}
+
+#form :is(#first-name, #last-name, #email, #message).nega {
+	border: 1px solid var(--Red);
+	box-shadow: 0 0 3px var(--Red-box-shadow);
+}
+
+#form :is(#first-name, #last-name, #email, #message).nega + .error-text {
+	display: block;
+}

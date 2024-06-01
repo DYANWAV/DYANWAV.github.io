@@ -1,0 +1,32 @@
+@import url(css/reset.css);
+@import url(css/variables.css);
+@import url(css/WavIcon.css);
+@import url(css/article-row.css);
+@import url(css/WavHeader.css);
+@import url(css/nav-hidden.css);
+
+html {
+	position: relative;
+}
+
+body {
+	background-color: var(--black);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: var(--white);
+}
+
+.main {
+	min-height: 100vh;
+}
+
+@media screen and (min-width: 320px) {
+	body {
+		font-size: calc(14px + 2 * ((100vw - 320px) / 680));
+	}
+}
+@media screen and (min-width: 1000px) {
+	body {
+		font-size: 16px;
+	}
+}

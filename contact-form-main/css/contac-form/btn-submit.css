@@ -1,0 +1,18 @@
+#form .btn-submit {
+	border: 0;
+	border-radius: 8px;
+	background-color: var(--Green-600-medium);
+	color: white;
+	width: 100%;
+	padding: 1rem;
+
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 700;
+
+	transition: all 0.2s;
+}
+
+#form .btn-submit:hover {
+	background-color: var(--Green-600-dark);
+}

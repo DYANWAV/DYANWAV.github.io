@@ -1,0 +1,69 @@
+#form {
+	background-color: #fff;
+	padding: 18px;
+	width: 100%;
+	min-height: 100vh;
+	max-width: 80ch;
+	margin: 0 auto;
+}
+
+#form fieldset {
+	border: 0;
+	padding: 0;
+}
+
+#form :is(input, .message, .query-type-section label) {
+	background-color: transparent;
+	/* border: 0; */
+	border: 1px solid var(--Grey-900-darker);
+	border-radius: var(--border-radius);
+	padding: 1rem;
+	color: var(--Grey-900-darker);
+	width: 100%;
+	margin: 0;
+}
+
+#form :is(input, .message):focus {
+	outline: 0;
+	border: 1px solid var(--Green-600-medium);
+	box-shadow: 0 0 3px var(--Green-box-shadow);
+}
+
+#form label {
+	display: flex;
+	flex-direction: column;
+	margin-block: 20px;
+	gap: var(--10-px);
+}
+
+#form .query-type-section label {
+	flex-direction: row;
+	margin-block: calc(var(--10-px) * 2);
+	gap: var(--10-px);
+}
+
+#form .label-consent {
+	flex-direction: row;
+	width: max-content;
+}
+
+#form :is(input[type='radio'], input[type='checkbox']) {
+	width: 24px;
+}
+
+@media screen and (min-width: 576px) {
+	#form {
+		border-radius: var(--border-radius);
+		width: 90%;
+		margin-block: 40px;
+	}
+
+	#form .div {
+		display: flex;
+		gap: 20px;
+	}
+
+	#form .div label {
+		width: 100%;
+	}
+}

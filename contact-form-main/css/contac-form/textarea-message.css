@@ -1,0 +1,7 @@
+#form .message {
+	height: 30ch;
+}
+
+:is(#form) .message {
+	resize: none;
+}

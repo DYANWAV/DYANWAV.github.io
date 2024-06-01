@@ -1,0 +1,38 @@
+@import url(css/modern-reset.css);
+@import url(css/variables.css);
+@import url(css/contac-form/form.css);
+@import url(css/contac-form/personal-info.css);
+@import url(css/contac-form/textarea-message.css);
+@import url(css/contac-form/validations.css);
+@import url(css/contac-form/btn-submit.css);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--Grey-500-medium);
+	min-height: 100vh;
+	font-family: 'Karla', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-display: swap;
+	font-size: 16px;
+	/* font weight 400 & 700 */
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: column;
+}
+
+.main {
+	min-height: 100vh;
+}
