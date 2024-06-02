@@ -21,10 +21,10 @@ class WavIcon extends HTMLElement {
 	}
 
 	connectedCallback() {
-		// this.style.display = 'inline-block';
 		this.style.lineHeight = '0';
 		this.icon = this.getAttribute('icon') ?? 'facebook';
 		this.titulo = this.getAttribute('titulo') ?? this.icon;
+		this.setAttribute('title', this.icon);
 		this.render();
 	}
 

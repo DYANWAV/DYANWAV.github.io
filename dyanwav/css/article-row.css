@@ -3,6 +3,11 @@ section {
 	flex-direction: column;
 }
 
+section img {
+	object-fit: cover;
+	aspect-ratio: 3/2;
+}
+
 section .text-container {
 	display: flex;
 	align-items: center;
