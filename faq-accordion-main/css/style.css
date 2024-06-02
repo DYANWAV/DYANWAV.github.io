@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--White: rgb(255, 255, 255);
+	--Light-pink: rgb(249, 240, 255);
+	--Grayish-purple: rgb(140, 105, 145);
+	--Dark-purple: rgb(47, 21, 51);
+	--Dark-purple-shadow: rgba(47, 21, 51, 0.2);
+}
+
+body {
+	background-image: url(/frontendmentor/html-css-js/Newbie/faq-accordion-main/assets/images/background-pattern-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: var(--Light-pink);
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+	/* height: 100vh; */
+}
+
+@media screen and (min-width: 500px) {
+	body {
+		background-image: url(/frontendmentor/html-css-js/Newbie/faq-accordion-main/assets/images/background-pattern-desktop.svg);
+		background-size: auto;
+	}
+}
+
+.grid {
+	display: grid;
+	place-content: center;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.main {
+	min-height: 100vh;
+	padding-block: 40px;
+}
+
+/* MARK: faqs Card */
+.faqs-card {
+	background-color: var(--White);
+	border-radius: 8px;
+	box-shadow: 0 0 30px var(--Dark-purple-shadow);
+	max-width: 460px;
+	width: 80%;
+	min-width: 300px;
+	margin: auto;
+	padding: 1.6rem 1rem;
+}
+
+.h2 {
+	color: var(--Dark-purple);
+	font-size: 2em;
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+.star-image {
+	width: 24px;
+}
+
+/* MARK: bloque */
+.question {
+	justify-content: space-between;
+	margin-block: 12px;
+}
+.h3 {
+	color: var(--Dark-purple);
+	font-size: 1em;
+	margin: 0;
+	transition: all 0.2s;
+}
+
+.icon-plus,
+.icon-minus {
+	transition: all 0.2s;
+}
+
+.icon-minus {
+	display: none;
+}
+
+.question.active .icon-minus {
+	display: block;
+}
+
+.question.active .icon-plus {
+	display: none;
+}
+
+.answer {
+	color: var(--Grayish-purple);
+	line-height: 1.2;
+	height: 0;
+	margin: 0;
+	padding-right: 32px;
+	overflow: hidden;
+	transition: all 0.4s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.answer p {
+	height: 0;
+}
+
+.question.active .answer p {
+	height: 100%;
+}
+
+.question.active + .answer {
+	height: 130px;
+}
+
+@media (hover: hover) {
+	.h3:hover {
+		color: var(--Grayish-purple);
+		cursor: pointer;
+	}
+
+	.icon-plus:hover,
+	.icon-minus:hover {
+		transform: scale(120%);
+	}
+}
