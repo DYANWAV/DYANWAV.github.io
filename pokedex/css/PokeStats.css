@@ -1,0 +1,30 @@
+.poke-card #table {
+    margin: 0 auto;
+    /* display: table; */
+
+
+    overflow: scroll;
+}
+
+.poke-card #table-body {
+    width: 100%;
+}
+
+.poke-card tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.poke-card td {
+    line-height: 1;
+    padding: 0;
+}
+
+.poke-card tr:nth-child(even) {
+    background-color: var(--empty);
+}

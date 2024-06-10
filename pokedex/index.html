@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hello World</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+		<link href="./style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<main class="main">
+			<h1>POKEDEX</h1>
+
+			<form id="form" class="poke-search">
+				<input
+					class="input-search"
+					id="search"
+					type="text"
+					placeholder="Buscar Pokemon" />
+				<button class="btn-submit" type="submit">Buscar</button>
+			</form>
+
+			<article class="poke-card">
+				<div class="poke-info-container">
+					<div class="poke-id-name-container">
+						<span id="poke-id"></span>
+						<strong id="poke-name"></strong>
+					</div>
+					<picture>
+						<img id="poke-imageDefault" />
+						<img id="poke-official-artwork" />
+						<img id="poke-other-image" />
+					</picture>
+
+					<div id="poke-types">
+						<span class="poke-types-empty"></span>
+						<span class="poke-types-empty"></span>
+					</div>
+				</div>
+
+				<table id="table">
+					<tbody id="table-body">
+						<tr class="tr-empty">
+							<td></td>
+							<td><strong></strong></td>
+						</tr>
+
+						<tr class="tr-empty">
+							<td></td>
+							<td><strong></strong></td>
+						</tr>
+
+						<tr class="tr-empty">
+							<td></td>
+							<td><strong></strong></td>
+						</tr>
+
+						<tr class="tr-empty">
+							<td></td>
+							<td><strong></strong></td>
+						</tr>
+
+						<tr class="tr-empty">
+							<td></td>
+							<td><strong></strong></td>
+						</tr>
+
+						<tr class="tr-empty">
+							<td></td>
+							<td><strong></strong></td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</main>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

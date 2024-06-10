@@ -1,0 +1,21 @@
+.poke-card .poke-name-empty {
+    background-color: var(--empty);
+    min-width: 150px;
+    padding: 10px 3rem;
+    border-radius: 100vmax;
+}
+
+.poke-card .poke-id-empty {
+    min-width: 130px;
+    background-color: var(--empty);
+    padding: 10px 1rem;
+    border-radius: 100vmax;
+}
+
+.poke-card #poke-types .poke-types-empty {
+    padding: 10px 2rem;
+}
+
+.poke-card .tr-empty {
+    padding: 1.2rem;
+}
