@@ -1,0 +1,76 @@
+.buttons-container {
+	min-width: 500px;
+	max-width: 600px;
+
+	display: flex;
+	gap: 1rem;
+}
+
+.btn {
+	width: 50px;
+	flex-grow: 1;
+	transition: all 0.3s ease-in-out;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.btn span {
+	position: static;
+	opacity: 0;
+	width: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn.active {
+	flex-grow: 7;
+
+	background-color: rgb(209, 46, 37);
+}
+
+.btn.active span {
+	opacity: 1;
+	width: 50%;
+	color: rgb(255, 255, 255);
+}
+
+.btn.active svg {
+	stroke: white;
+}
+
+@media screen and (max-width: 576px) {
+	body {
+		font-size: 14px;
+	}
+
+	button {
+		padding: 0.75rem 0.5rem;
+		/* font-size: 12px; */
+	}
+
+	.buttons-container {
+		min-width: 90%;
+		gap: 0.65rem;
+	}
+
+	.btn {
+		width: 50px;
+		flex-grow: 1;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.btn.active {
+		flex-grow: 10;
+	}
+
+	.btn.active span {
+		width: 70%;
+	}
+
+	.btn.active svg {
+		width: 30%;
+	}
+}
